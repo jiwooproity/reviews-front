@@ -1,13 +1,13 @@
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve({ status: 200 });
+    reject({ status: 500 });
   }, 1000);
 });
 
-const getPromise = async () => {
-  const response = await promise;
-  console.log(response.status);
-  console.log("비동기 처리 완료");
-};
-
-getPromise();
+promise
+  .then((response) => {
+    console.log(response.status);
+  })
+  .catch((error) => {
+    console.log("reject : " + error.status);
+  });
