@@ -29,6 +29,11 @@ function Star() {
     spaceContext.fillStyle = "rgba(255, 255, 255, 0.8)";
     spaceContext.arc(x, y, radius, 0, Math.PI * 2);
     spaceContext.fill();
+
+    spaceContext.beginPath();
+    spaceContext.strokeStyle = "rgba(30, 255, 255, 0.1)";
+    spaceContext.arc(x, y, radius, 0, Math.PI * 2);
+    spaceContext.stroke();
   };
 }
 
