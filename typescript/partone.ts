@@ -3,16 +3,16 @@ type dataType = {
     age: number;
 }
 
-type functionType = ({data}: {data: dataType}) => number;
+type functionType = (data: dataType) => number;
 
 const data: dataType = {
     name: "sojiwoo",
     age: 23
 }
 
-const returnData: functionType = function({ data }) {
+const returnData: functionType = function(data) {
     return data.age;
 }
 
-const getData = returnData({data});
+const getData = returnData(data);
 console.log(getData);
