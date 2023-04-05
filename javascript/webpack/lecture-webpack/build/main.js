@@ -126,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n\n\n//# sourceURL=webpack://lecture-webpack/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _assets_images_yuna_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/images/yuna.jpeg */ \"./assets/images/yuna.jpeg\");\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    document.body.innerHTML = `\n        <img src=${_assets_images_yuna_jpeg__WEBPACK_IMPORTED_MODULE_1__}/>\n    `;\n})\n\n//# sourceURL=webpack://lecture-webpack/./src/app.js?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/yuna.jpeg\";\n\n//# sourceURL=webpack://lecture-webpack/./assets/images/yuna.jpeg?");
+eval("module.exports = __webpack_require__.p + \"images/yuna..jpeg?773829a3c374e2eaac03\";\n\n//# sourceURL=webpack://lecture-webpack/./assets/images/yuna.jpeg?");
 
 /***/ })
 

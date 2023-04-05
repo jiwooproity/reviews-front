@@ -24,13 +24,27 @@ module.exports = {
                     'css-loader'
                 ]
             },
+
+            // webpack5 asset/resource
             {
-                test: /\.jpeg/,
+                test: /\.jpe?g$/,
                 type: 'asset/resource',
+                // type: 'asset/inline',
                 generator: {
-                  filename: 'images/[name][ext]',
+                  filename: 'images/[name].[ext]?[hash]',
                 },
-              },
+            },
+
+            // need downgrade webpack 5
+            // {
+            //     test: /\.jpe?g$/,
+            //     loader: 'url-loader',
+            //     options: {
+            //         publicPath: '../build/',
+            //         name: '[name].[ext]?[hash]',
+            //         limit: 20000, // 20kb
+            //     }
+            // }
         ]
     },
 }
