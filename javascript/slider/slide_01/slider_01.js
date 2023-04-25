@@ -1,10 +1,12 @@
 const slide_box = document.getElementById("slide_box");
 const slide_item = document.querySelectorAll(".slide_item");
 
-const [left_arrow, right_arrow] = document.querySelectorAll("#slide_arrow");
-
 let slide_index = 1;
 let slide_left = 0;
+
+slide_item[slide_index - 1].style.opacity = "1";
+
+const [left_arrow, right_arrow] = document.querySelectorAll("#slide_arrow");
 
 const onClickArrow = (direction) => {
   if (direction === "right") {
@@ -30,6 +32,8 @@ const onClickArrow = (direction) => {
       slide_index = 3;
     }
   }
+
+  slide_item.forEach((el, index) => (el.style.opacity = index === slide_index - 1 ? "1" : "0"));
 };
 
 left_arrow.addEventListener("click", () => onClickArrow("left"));
