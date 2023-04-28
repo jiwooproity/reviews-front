@@ -3,11 +3,51 @@
   padding: 0px;
 }
 
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 1200px;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-item {
+  font-size: 18px;
+  line-height: 18px;
+  list-style: none;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
 }
 
-.dom {
+.top {
+  width: 100%;
+  height: 100vh;
+}
+
+.middle {
+  width: 100%;
+  height: 100vh;
+}
+
+.bottom {
   width: 100%;
   height: 100vh;
 }
