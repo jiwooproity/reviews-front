@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+}
+
+.navbar_wrap {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 55px;
+    font-size: 25px;
+    line-height: 55px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu_item {
+    height: 55px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu_item > span {
+    font-size: 15px;
+    line-height: 55px;
+}
+
+.menu_item > .submenu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    border-top: 1px solid white;
+    border-left: 1px solid rgba(54, 54, 54, 0.5);
+    border-right: 1px solid rgba(54, 54, 54, 0.5);
+    border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+}
+
+.menu_item:hover > .submenu {
+    display: block;
+}
+
+.menu_item:focus-within > .submenu {
+    display: block;
+}
+
+.submenu > .submenu_item {
+    padding: 10px 10px;
+}
+
+.submenu > .submenu_item > span {
+    font-size: 15px;
+    line-height: 15px;
+    white-space: nowrap;
+}
