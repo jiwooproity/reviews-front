@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 500px;
+  height: 350px;
+  background-color: #f2f7f2;
+  border-color: #eee;
+  border-radius: 10px;
+  border-width: 2px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.main-box {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.main > .item {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  animation: spinAround 6s linear infinite;
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg) translate(120px);
+  }
+
+  to {
+    transform: rotate(360deg) translate(120px);
+  }
+}
