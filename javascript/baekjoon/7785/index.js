@@ -1,18 +1,14 @@
 const fs = require("fs");
-const input = fs.readFileSync("./baekjoon/7785/std.txt").toString().trim().split("\n");
+const input = fs.readFileSync("./std.txt").toString().trim().split("\n").map((i) => i.split(" "));
+input.shift();
 
-const N = Number(input.shift());
-const commuteManage = new Set();
+const result = [];
+const companyMap = new Map(input.map((item) => [item[0], item[1]]));
 
-for(let i = 0; i < N; i++) {
-    const member = input[i].split(" ");
-    
-    if(member[1] === "enter") {
-        commuteManage.add(member[0]);
-    } else if(member[1] === "leave") {
-        commuteManage.delete(member[0]);
+for(let key of companyMap.keys()) {
+    if(companyMap.get(key) !== 'leave') {
+        result.push(key);
     }
 }
 
-const sorting = Array.from(commuteManage).sort();
-console.log(sorting.join("\n"));
+console.log(result.sort().reverse());
