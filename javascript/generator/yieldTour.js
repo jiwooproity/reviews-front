@@ -11,12 +11,12 @@ function run(generator) {
 
   (function interate({ value, done }) {
     if (done) {
-      return value;
+      return;
     } else {
       console.log({ value, done });
     }
 
-    interate(it.next(value));
+    interate(it.next());
   })(it.next());
 }
 
