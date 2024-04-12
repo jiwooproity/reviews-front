@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"minus",{enumerable:true,get:function(){return minus}});var minus=function(num1,num2){return num1-num2};
