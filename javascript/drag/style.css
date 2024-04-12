@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-box {
+  width: 330px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: rgba(240, 240, 240);
+}
+
+.drag-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.drag-item.dragging {
+  background-color: transparent;
+  border: 1px dotted black;
+  opacity: 0.1;
+}
+
+.drag-item.dragging > span {
+  display: none;
+}
+
+.drag-inner-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(54, 54, 54, 0.8);
+}
