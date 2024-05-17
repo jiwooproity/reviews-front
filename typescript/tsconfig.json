@@ -1,8 +1,13 @@
 {
-    "compilerOptions": {
-        "target": "ES5",
-        "module": "CommonJS",
-        "noImplicitAny": true,
-        "strictNullChecks": true
-    }
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "strict": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
 }
