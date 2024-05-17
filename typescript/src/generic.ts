@@ -25,9 +25,9 @@ numberStack.push("Hello, ");
 numberStack.push("World");
 console.log(numberStack.join());
 
-function joinArray<T>(array: T[]): string {
+const joinArray = <T>(array: T[]): string => {
   return array.join(" ");
-}
+};
 
 const numberArr = [1, 2, 3, 4, 5];
 const numberToJoin = joinArray<number>(numberArr);
