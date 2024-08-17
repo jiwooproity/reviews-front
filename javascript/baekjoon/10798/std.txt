@@ -1,5 +1,0 @@
-ABCDE
-ABCDE
-01
-FGHIJ
-fghij

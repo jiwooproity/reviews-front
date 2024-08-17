@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../group/minus.ts"],"sourcesContent":["export const minus = (num1: number, num2: number) => {\n  return num1 - num2;\n};\n"],"names":["minus","num1","num2"],"rangeMappings":"","mappings":"oGAAaA,+CAAAA,SAAN,MAAMA,MAAQ,CAACC,KAAcC,QAClC,OAAOD,KAAOC,IAChB"}

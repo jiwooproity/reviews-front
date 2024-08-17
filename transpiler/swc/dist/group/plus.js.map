@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../group/plus.ts"],"sourcesContent":["export const plus = (num1: number, num2: number) => {\n  return num1 + num2;\n};\n"],"names":["plus","num1","num2"],"rangeMappings":"","mappings":"oGAAaA,8CAAAA,QAAN,MAAMA,KAAO,CAACC,KAAcC,QACjC,OAAOD,KAAOC,IAChB"}
