@@ -40,5 +40,5 @@ class Day {
 
 (() => {
   const day = new Day(Month.August).getMonth();
-  console.log(day);
+  console.log(day); // 8월
 })();
