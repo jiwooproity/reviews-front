@@ -1,9 +1,11 @@
 type Snacks = "홈런볼" | "칙촉";
 
+// Maped Type
 type Price = {
   [name in Snacks]: number;
 };
 
+// Record Type
 type PriceRecord = Record<Snacks, number>;
 
 const prices: PriceRecord = {
