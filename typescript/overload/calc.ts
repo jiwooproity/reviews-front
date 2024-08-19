@@ -1,4 +1,5 @@
 function calc(a: number, b: number): number;
+
 function calc(a: number, b: number, c: number): number;
 
 function calc(a: number, b: number, c?: number): number {
