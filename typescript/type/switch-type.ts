@@ -41,11 +41,9 @@ function typeCheckValid(value: string | number | Date | Person) {
       if (value instanceof Date) {
         console.log(`Today is ${MONTH_KEYS[value.getDay()]}`);
       }
-
       if (value instanceof Person) {
         console.log(value.getIntroduction());
       }
-
       break;
     default:
       break;
