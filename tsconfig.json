@@ -5,8 +5,12 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
     "baseUrl": ".",
-    "outDir": "./build"
+    "outDir": "./build",
+    "moduleDetection": "force"
   },
   "include": ["./typescript/**/*.ts"]
 }
